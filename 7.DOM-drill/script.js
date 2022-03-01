@@ -60,14 +60,16 @@ function sort(e){
         if(children[i].nodeType === 1 )
         {
           if(j == 0)
-          {
+          { j++
             children[i].innerHTML = firstElement;
           }
           else
-          {
-            children[i].innerHTML = arrayNameOfFilms[j-1];
+          {if (children[i].getAttribute("class") != "important")
+          {children[i].innerHTML = arrayNameOfFilms[j-1];
+            j++;
           }
-          j++;
+            
+          }
         }
       }
     }
@@ -76,7 +78,6 @@ function sort(e){
     let nodeFF =  ul.firstChild.cloneNode();
     nodeFF.innerHTML = firstElement;
     ul.insertBefore(nodeFF, ul.firstChild);
-    arrayNameOfFilms.push(firstElement);
 
   }
 }
