@@ -103,3 +103,41 @@ function shuffle(array) {
 
 let newDiv = document.createElement("div");
 document.body.insertBefore(newDiv, document.body.children[1]);
+let newSelect = document.createElement("select");
+
+newDiv.appendChild(newSelect);
+let option1 = document.createElement("option");
+option1.setAttribute("value", "important");
+option1.textContent = "important franchise"
+newSelect.appendChild(option1);
+let option2 = document.createElement("option");
+option2.setAttribute("value", "normal");
+option2.textContent = "normal franchise"
+newSelect.appendChild(option2);
+
+selection= document.querySelector("select");
+selection.addEventListener("change", pickSelection);
+
+
+function selectFunction(){
+  let myLi = document.getElementsByTagName("li");
+  console.log(myLi.length);
+  for (let i = 0; i < myLi.length; i++) {
+    if(mySelect.value == "important")
+    {
+      if(myLi.item(i).getAttribute("class") != "important")
+      {
+        console.log("not important")
+        myLi.item(i).style.visibility = "hidden";
+      }
+      else
+      {
+        console.log("important");
+      }
+    }
+    else
+    {
+      myLi.item(i).style.visibility = "visible";
+    }
+  }
+};

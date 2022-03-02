@@ -1,38 +1,36 @@
-# Algorithmics with JavaScript
+# DOM Exploration
 
-- SOLO
+The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document
 
-## Training goals
+In this series of challenges we're going to explore different aspect of this technology. Unless explicitely stated otherwise, you should **NEVER** edit the HTML files provided, everything has to be done using Javascript.
 
-Algorithmics is the very base of the developer job. We will learn it with the JavaScript language.
+## Prerequisite
 
-At the end of this training the trainee will have mastered the following aspect of JavaScript:
+Before diving in, it is essential to grasp the main concepts of the Javascript language such as:
 
-* Variables
-* Operators
-* Arrays
-* Control Structures
-* Functions
-* Objects
-* Classes
+- Variables and constants
+- Conditions
+- Loops
+- Arrays and objects
+- Functions
 
-The trainee will then be able to begin its learning of JavaScript in the context of Web Development.
+If you need a reminder feel free to get back to the [previous chapter](../05-algo-js).
 
-### Guidelines for all exercises
+## Chapters:
 
-Before beginning the exercises, join the **GitHub Classroom** to create a obligated repository. `From now on we will use GitHub classroom for all exercises.`.
+- [1. Introduction](./1.Introduction) 
+  - The DOM tree
+  - Nodes
+  - How to read a DOM tree using javascript
+  - Accessing root level nodes
+- [2. DOM Selectors](./2.Selectors)
+  - `querySelector` and `querySelectorAll` methods
+- [3. Creating nodes](./3.Create)
+  - The `createElement` method
+  - Inserting node
+- [4. Navigating the DOM](./4.Navigate)
+  - Siblings
+- [5. Events](./5.Events)
+- [6. Working with forms](./6.Forms)
+- [7. Big recap "drill exercise"](./7.DOM-drill)
 
-For each exercise create a `.js` file named like the the number of the exercise. Example: **`1.1.js`**. **Commit and push your git repository after each exercise.**
-
-This directive is important both to make you practice git and to allow us to follow your progression in the exercises.
-
-## Program
-
-- [Algorithmics with JavaScript 01 - Introduction](./01-intro.md)
-- [Algorithmics with JavaScript 02 - Control structures](./02-control-structures.md)
-- [Algorithmics with JavaScript 03 - Arrays](./03-arrays.md)
-- [Algorithmics with JavaScript 04 - Functions](./04-functions.md)
-- [Algorithmics with JavaScript 05 - Objects](./05-objects.md)
-- [Algorithmics with JavaScript 06 - Classes](./06-classes.md)
-- [Algorithmics with JavaScript 07 - Extra exercises](./07-extras.md)
-- [Algorithmics with JavaScript Special 01 - Debugger](./s01-debugger.md)
